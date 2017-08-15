@@ -3,6 +3,8 @@ package mum.edu.prototype;
 import java.io.Serializable;
 
 public class Employee implements Cloneable, Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String lastname;
 	private String firstname;
@@ -124,6 +126,6 @@ public class Employee implements Cloneable, Serializable {
 			zipcode);
 		employee.setSupervisor(this.supervisor);
 		employee.setStaff(this.staff);
-		return null;
+		return employee;
 	}
 }
